@@ -1,0 +1,38 @@
+/*variables defining font-stacks*/
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Istok+Web:400,700,400Italic,);
+
+$georgia: Georgia,Utopia,Palatino,'Palatino Linotype',Times, "Times New Roman",serif;
+$tahoma: Arial,FreeSans,Helvetica,sans-serif;
+
+@mixin title_text($size: 1.8em, $weight: 700) {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: $size;
+  font-style: normal;
+  font-weight: $weight;
+  color: #f7f7f7;
+  
+}
+
+@mixin body_text($size: 1em) {
+  font-family: 'Istok Web';
+  font-size: $size;
+  font-style: normal;
+  font-weight: normal;
+  color: #f7f7f7;
+  
+}
+
+/*@font-face {
+    font-family: 'UbuntuRegular';
+    src: font-url('Ubuntu-R-webfont.eot');
+    src: font-url('Ubuntu-R-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('Ubuntu-R-webfont.woff') format('woff'),
+         font-url('Ubuntu-R-webfont.ttf') format('truetype'),
+         font-url('Ubuntu-R-webfont.svg#UbuntuRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+
