@@ -2,26 +2,22 @@
 !!!
 %html.no-js
   %head
-    %title Quipper test: web design, IT consultancy and photography
+    %title= yield(:title)
     %meta(name="description" content="Quipper task manager")
     %meta(name="author" content="the-feel : Eric Waring")
-    /%meta(name="copyright" content="Copyright the-feel #{Time.now.year}. All rights reserved.")
     
-    = stylesheet_link_tag "blueprint/screen"
-    = stylesheet_link_tag :application
+    = stylesheet_link_tag :application, media: "all"
     = javascript_include_tag :application
     = javascript_include_tag "jquery.colorbox.js"
     /[if lt IE 9]
-      = stylesheet_link_tag "blueprint/ie"
+      = javascript_include_tag "http://html5shiv.googlecode.com/svn/trunk/html5.js"
 
 
     = csrf_meta_tags
 
   %body
-    - flash.each do |name, msg|
-      = content_tag :div, msg, :id => "flash_#{name}" if msg.is a?(String)
-      #the_wrapper.container
-        .row
-          .twelvecol#mainContent
-            =yield
+    .container
+      .row
+        .twelvecolumn
+          =yield
             

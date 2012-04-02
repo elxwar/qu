@@ -13,3 +13,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#ignore other files
+doc/
+*.swp
+bundler_stubs/
+/nbproject/private/

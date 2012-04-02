@@ -1,23 +1,27 @@
 /*variables defining font-stacks*/
-
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Istok+Web:400,700,400Italic,);
 $georgia: Georgia,Utopia,Palatino,'Palatino Linotype',Times, "Times New Roman",serif;
 $tahoma: Arial,FreeSans,Helvetica,sans-serif;
+$titlecolour: #444;
+$textcolour: #333;
 
-@mixin title_text($size: 1em) {
-  font-family: 'SpecialEliteRegular';
+
+@mixin title_text($size: 1.8em, $weight: 700) {
+  font-family: 'Droid Sans', sans-serif;
   font-size: $size;
   font-style: normal;
-  font-weight: 100;
-  color: black;
+  font-weight: $weight;
+  color: $titlecolour;
   
 }
+
 
 @mixin body_text($size: 1em) {
   font-family: 'SpecialEliteRegular';
   font-size: $size;
   font-style: normal;
   font-weight: normal;
-  color: black;
+  color: $textcolour;
   
 }
 

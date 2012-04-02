@@ -11,4 +11,23 @@
  *= require_self
  *= require_tree .
 */
+@import "bootstrap";
 @import "./partials/font_families";
+$lightgrey: #eee;
+
+body{
+  @include body_text;
+  background-color:$lightgrey;
+  #logo{padding-top: 0.7em;}
+  h1{
+    @include title_text(2.7em);
+    padding: 1em 0 1.7em;
+    line-height:1.5;
+  }
+  .center{text-align: center;}
+  .buttons{
+    margin: 0 1.7em 0;
+    width: 5em;
+  }
+  
+}
