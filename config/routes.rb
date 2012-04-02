@@ -1,5 +1,6 @@
 Quipper::Application.routes.draw do
-  get "users/new"
+  resources :users
+  
   match '/register', to: 'users#new'
   get "pages/home"
 

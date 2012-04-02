@@ -5,6 +5,8 @@ gem 'modernizr-rails', '2.0.6'
 gem 'haml', '3.1.4'
 gem 'bootstrap-sass', '2.0.2'
 gem 'pg', '0.13.2'
+gem 'annotate', '~> 2.4.1.beta'
+gem 'bcrypt-ruby', '3.0.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -12,6 +14,7 @@ gem 'pg', '0.13.2'
 group :development, :test do 
 #  gem 'mysql2', '0.3.11'
   gem 'rspec-rails', '2.9.0'
+  gem 'factory_girl_rails', '3.0.0'
 end
 
 group :test do

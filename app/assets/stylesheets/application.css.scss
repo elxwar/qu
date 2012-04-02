@@ -15,6 +15,12 @@
 @import "./partials/font_families";
 $lightgrey: #eee;
 
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body{
   @include body_text;
   background-color:$lightgrey;
@@ -28,6 +34,33 @@ body{
   .buttons{
     margin: 0 1.7em 0;
     width: 5em;
+  }
+  
+  .debug_dump{
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 9em;
+    @include box_sizing;
+  }
+  
+  input, textarea, select, .uneditable-input{
+    width: 100%;
+    padding:0.7em;
+    margin-bottom: 1em;
+  }
+  
+  #error_message{
+    color: #f00;
+    ul{
+      list-style: none;
+      margin: 0 0 1.5em 0;
+    }
+  }
+  
+  .field_with_errors{
+    @extend .control-group;
+    @extend .error;
   }
   
 }

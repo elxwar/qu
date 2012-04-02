@@ -1,0 +1,25 @@
+= provide :title, 'Register for Good Task Manager'
+.row
+  .span6.offset2
+    %h1 Registration
+.row
+  .span6.offset2
+    = form_for @user do |f|
+      =render 'shared/error_messages'
+      =f.label :firstname, "First Name"
+      =f.text_field :firstname
+
+      =f.label :surname
+      =f.text_field :surname
+
+      =f.label :email
+      =f.text_field :email
+
+      =f.label :password, "Password"
+      =f.password_field :password
+
+      =f.label :password_confirmation, "Confirm Password"
+      =f.password_field :password_confirmation
+      %br
+      =f.submit "Register", class: "btn btn-large"
+      

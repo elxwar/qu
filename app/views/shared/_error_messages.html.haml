@@ -1,0 +1,10 @@
+-if @user.errors.any?
+  #error_message
+    .alert.alert-error
+      The form contains 
+      =pluralize @user.errors.count, "error"
+      %br 
+      %br
+    %ul
+      -@user.errors.full_messages.each do |msg|
+        %li=msg
