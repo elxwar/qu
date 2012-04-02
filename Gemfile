@@ -4,12 +4,13 @@ gem 'rails', '3.2.3'
 gem 'modernizr-rails', '2.0.6'
 gem 'haml', '3.1.4'
 gem 'bootstrap-sass', '2.0.2'
+gem 'pg', '0.13.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do 
-  gem 'mysql2', '0.3.11'
+#  gem 'mysql2', '0.3.11'
   gem 'rspec-rails', '2.9.0'
 end
 
@@ -17,9 +18,9 @@ group :test do
   gem 'capybara', '1.1.2'
 end
 
-group :production do
-  gem 'pg', '0.13.2'
-end
+#group :production do
+#  gem 'pg', '0.13.2'
+#end
 
 # Gems used only for assets and not required
 # in production environments by default.
