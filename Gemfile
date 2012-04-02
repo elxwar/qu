@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
 gem 'modernizr-rails', '2.0.6'
+gem 'haml', '3.1.4'
+gem 'bootstrap-sass', '2.0.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
