@@ -1,4 +1,6 @@
 Quipper::Application.routes.draw do
+  get "users/new"
+  match '/register', to: 'users#new'
   get "pages/home"
 
   # The priority is based upon order of creation:

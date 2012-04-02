@@ -16,11 +16,11 @@ $textcolour: #333;
 }
 
 
-@mixin body_text($size: 1em) {
+@mixin body_text($size: 1em, $weight: normal) {
   font-family: 'SpecialEliteRegular';
   font-size: $size;
   font-style: normal;
-  font-weight: normal;
+  font-weight: $weight;
   color: $textcolour;
   
 }
